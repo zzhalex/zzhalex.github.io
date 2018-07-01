@@ -23,6 +23,8 @@ body h1{
     margin: 0;
     padding-top: 100px;
     text-align: center;
+    -webkit-clip-path: polygon(58% 0, 100% 0, 100% 75%, 0 97%, 0 14%);
+    clip-path: polygon(58% 0, 100% 0, 100% 75%, 0 97%, 0 14%);
     background-color: rgb(184, 111, 252);
 }
 
@@ -60,8 +62,8 @@ img{
 
 .bg{
    
-    -webkit-clip-path: polygon(100% 0, 67% 0, 0 100%, 0 63%);
-    clip-path: polygon(100% 0, 67% 0, 0 100%, 0 63%);
+    -webkit-clip-path: polygon(100% 0, 100% 66%, 0 100%, 0 33%, 100% 0);
+    clip-path: polygon(100% 0, 100% 66%, 0 100%, 0 33%, 100% 0);
     z-index: 2;
     padding-top: 20%;
     background-color: rgb(184, 111, 252);
@@ -75,7 +77,7 @@ img{
     width: 60%;
     margin-left: 20%;
     grid-template-columns: 50% 50%;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     text-align: left;
 }
 
@@ -98,4 +100,17 @@ h6{
 h6:hover{
     background-color: rgb(184, 111, 252);
     color:white;
+}
+
+.bot{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.bot img{
+    width: 40px;
+    border: solid 1px  rgb(184, 111, 252);
+    padding: 15px 15px 15px 15px;
+    border-radius: 50px;
+   
 }

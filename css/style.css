@@ -22,12 +22,12 @@ body{
     -webkit-clip-path: polygon(100% 1%, 100% 100%, 0 100%, 84% 80%);
     clip-path: polygon(100% 1%, 100% 100%, 0 100%, 84% 80%);
     z-index: -1;
-    background-color: aqua;
+    background-color: rgb(184, 111, 252);
 }
 
 .bg2{
     z-index: -2;
-    background-color:blue;
+    background-color:rgb(34, 13, 53);
     -webkit-clip-path: polygon(100% 1%, 74% 71%, 0 100%, 84% 80%);
     clip-path: polygon(100% 1%, 74% 71%, 0 100%, 84% 80%);
 }
@@ -63,7 +63,7 @@ ul li{
 
 ul li:nth-child(1){
     background: #EBECF2;
-    top: -105px;
+    top: -140px;
     z-index: 2;
 }
 
@@ -75,12 +75,20 @@ ul li:nth-child(2){
 
 ul li:nth-child(3){
     background:#EBECF2;
-    top: 105px;
+    top: 140px;
     z-index: 2;
 }
 
 img{
     height: 100px;
+}
+
+#left img{
+    width: 70px;
+    height: auto;
+    border: solid 1px rgb(184, 111, 252);
+    padding: 8px 15px 8px 15px;
+    border-radius: 25px;
 }
 
 ul li:hover{
@@ -109,3 +117,28 @@ h1:before{
     
 }
 
+a:link {
+    text-decoration: none;
+    
+}
+
+h6{
+    border: solid 1px  rgb(184, 111, 252);
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+h6:hover{
+    background-color: rgb(184, 111, 252);
+    color:white;
+}
+
+a:link {
+    color: rgb(184, 111, 252);
+}
+
+a:visited {
+    color: rgb(184, 111, 252);
+}

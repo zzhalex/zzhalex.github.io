@@ -7,8 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="project.css" />
     <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 <body>
-    <canvas></canvas>
+    <div ng-app="myApp" ng-controller="myCtrl">
+
+        <p>Select a car:</p>
+        
+        <select ng-model="selectedItem" ng-options="x.git for x in cars">
+        </select>
+        
+        <h1>You selected: {{selectedItem.git}}</h1>
+        <p>Its color is: {{selectedItem.color}}</p>
+        
+     
+            <div ng-repeat="y in selectedItem.body">
+                
+                <h3>{{y.name}}</h3>
+                <a href={{y.link}}>Check</a>
+            
+            </div>
+           
+            
+   
+        </div>
+        
+        <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.cars = [
+                {git : "GitLab", body:[{name:'Playlist',type:'Node.js',link:"https://csil-git1.cs.surrey.sfu.ca/zhihaoz/ex6-470",logo:'<img src="img/gitlab.svg">'},
+                                       {name:"HotCooks",link:"Ruby On Rails",link:"https://csil-git1.cs.surrey.sfu.ca/mca117/HotCooks",logo:'<img src="img/gitlab.svg">'},
+                                       {name:"MvcMovie",type:'.Net',link:'https://csil-git1.cs.surrey.sfu.ca/zhihaoz/MvcMovie',logo:'<img src="img/gitlab.svg">'}]},
+                {git : "GitHub", body:[{name:'Hero Editor',type:'Angular',link:"https://csil-git1.cs.surrey.sfu.ca/zhihaoz/ex6-470",logo:'<img src="img/gitlab.svg">'},
+                                        {name:'LoginPHP',type:'php',link:"https://csil-git1.cs.surrey.sfu.ca/zhihaoz/ex6-470",logo:'<img src="img/gitlab.svg">'}]}
+            ];
+        });
+        </script>
+        
 </body>
 </html>

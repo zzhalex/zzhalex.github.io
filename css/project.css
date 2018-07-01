@@ -70,7 +70,12 @@ a:link {
 strong{
     width: 150px;
     padding: 10px 10px 10px 10px;
-    border: solid 2px rgb(184, 111, 252);
+    
+}
+
+strong:hover{
+    background-color: rgb(184, 111, 252);
+    color:white;
 }
 
 #inbox img{

@@ -123,6 +123,7 @@ h6:hover{
       width: 100%;
       grid-gap: 2px;
       margin: 0;
+      top:20%;
     }
     div img{
         width: 20px;
@@ -147,5 +148,10 @@ h6:hover{
     }
     p{
         font-size: 10px;
+    }
+    div.content{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 100px;
     }
   }

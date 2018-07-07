@@ -37,6 +37,12 @@
                             type: 'php',
                             link: "https://github.com/zzhalex/phplogin",
                             desp: "Only use PHP HTML CSS jQuery to build a login Demo(Ongoing)."
+                        },
+                        {
+                            name: 'Angular Front End',
+                            type: 'Angular',
+                            link: "https://github.com/zzhalex/angularng",
+                            desp: "Used Angular to connect the FAKE API, then get and render data to the view."
                         }
                     ]
                 }

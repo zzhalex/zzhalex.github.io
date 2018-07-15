@@ -47,12 +47,13 @@ img{
 }
 
 #box{
+    margin-top: 20px;
     width: 100%;
-   
+    color:white;
     height: auto;
-    border: solid 1px rgb(184, 111, 252);
-    border-radius: 15px;
-}
+    background-color:  rgb(184, 111, 252);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ }
 
 #inbox{
     width: 80%;
@@ -65,17 +66,19 @@ img{
 
 a:link {
     text-decoration: none;
+   
 }
 
 strong{
     width: 150px;
     padding: 10px 10px 10px 10px;
+    color:white;
     
 }
 
 strong:hover{
-    background-color: rgb(184, 111, 252);
-    color:white;
+   color: rgb(184, 111, 252);
+    background:white;
 }
 
 #inbox img{

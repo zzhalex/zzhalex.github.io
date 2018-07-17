@@ -45,7 +45,7 @@
                             desp: "Used Angular to connect the FAKE API, then get and render data to the view."
                         },
                         {
-                            name: 'Weather Mapp',
+                            name: 'Weather Map',
                             type: 'Node.js',
                             link: "https://github.com/zzhalex/weathermap",
                             desp: "Used Node.js, Google map and Heroku to make a weather map. Get data from Environment Canada and render them into Gmap information box."

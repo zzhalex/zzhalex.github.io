@@ -2,20 +2,23 @@ html,body{
     width: 100%;
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Impact, Charcoal, sans-serif!important;
     font-size: 20px;
     text-align: center;
 }
 
 .head{
-    margin: auto;
-     height: 300px;
-    width: 100%;
-    background-color:  rgb(184, 111, 252);
-   
+    height: 600px;
+    width:inherit;
     padding-top: 40px;
     color: aliceblue;
-    
+    text-align: center;
+    background-color: #040f1f;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23251632' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%234a2c65' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%236e4397' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%239359ca' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23b86ffc' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    /* background by SVGBackgrounds.com */ 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;    
 }
 
 select{
@@ -37,70 +40,70 @@ img{
     width: 60px;
 }
 
-.content{
-    display: grid;
-    width: 80%;
-    margin-left: 10%;
-    grid-template-columns: 33% 33% 33%;
-    grid-gap: 20px;
-   
+.content{ 
+    height: 491px; 
+  width:100%;
 }
 
-#box{
-    margin-top: 20px;
+.content:nth-child(odd){
+    background-color: #f5f6f8;
+}
+
+.box{
     width: 100%;
-    color:white;
-    height: auto;
-    background-color:  rgb(184, 111, 252);
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    height: inherit;
  }
 
-#inbox{
-    width: 80%;
-    margin-left: 10%;
-    text-align: left;
-    height: 80%;
-    margin-top: 10%;
+.left{
+    text-align: center;
 }
 
+.left img{
+    width: 120px;
+}
+
+.inbox{
+    width: 60%;
+    margin-left: 20%;
+}
 
 a:link {
-    text-decoration: none;
-   
+    text-decoration:none!important;
+    color:rgb(184,111,252)!important;
 }
 
-strong{
-    width: 150px;
-    padding: 10px 10px 10px 10px;
+
+h6{
+    width: 200px;
+    border: solid 3px  rgb(184, 111, 252);
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+}
+
+h6:hover{
+    background-color: rgb(184, 111, 252);
     color:white;
-    
 }
 
-strong:hover{
-   color: rgb(184, 111, 252);
-    background:white;
+h3{
+    color: rgb(184, 111, 252)!important;  
 }
 
-#inbox img{
-    height:30px;
-    border: solid 1px  rgb(184, 111, 252);
-    padding-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 50px;
+.underline{
+    width: 60px;
+    border-bottom: 8px solid rgb(184,111,252) ;
+}
+
+
+.bot p{
     text-align: center;
+    color: rgb(184, 111, 252);
+    font-size: 20px!important;
+    width: 20%;
+    margin-left: 40%;
+    border: 3px solid rgb(184,111,252);
 }
 
-.bot{
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 
-.bot img{
-    width: 40px;
-    border: solid 1px  rgb(184, 111, 252);
-    padding: 15px 15px 15px 15px;
-    border-radius: 50px;
-   
-}
+
+

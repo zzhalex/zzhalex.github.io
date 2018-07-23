@@ -7,43 +7,55 @@
     <title>Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/project.css" />
-    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 
 <body>
-    <div ng-app="myApp" ng-controller="myCtrl">
-        <div class="head">
-            <h3>Project</h3>
-            <p>Learn. Create.</p>
-        </div>
-        <p>Select GitHub Or GitLab:
-            <select ng-model="selectedItem" ng-options="x.git for x in cars">
-            </select>
-        </p>
-        <h1>{{selectedItem.git}}
-            <img src={{selectedItem.logo}}>
-        </h1>
+    <div class='top' ng-app="myApp" ng-controller="myCtrl">
+        <div class="row head">
 
-        <div class="content">
-            <div id="box" ng-repeat="y in selectedItem.body">
-                <div id="inbox">
-                    
-                    <span><a target="_blank" href={{y.link}}>
-                            <Strong>{{y.name}}</Strong>  
-                    </a></span> 
-                   
-                    <p>Tech: {{y.type}}</p>
-                    <p>Description: {{y.desp}}</p>
+
+            <div class="col align-self-center">
+
+                <h4>Learn. Create.</h4>
+                <p>Select GitHub Or GitLab:
+                    <select ng-model="selectedItem" ng-options="x.git for x in gits">
+                    </select>
+                </p>
+            </div>
+
+            <div class="col align-self-center">
+                <h1>{{selectedItem.git}}
+                    <img src={{selectedItem.logo}}>
+                </h1>
+            </div>
+        </div>
+        <div class="content" ng-repeat="y in selectedItem.body">
+            <div class="row box">
+                <div class="col align-self-center left">
+                    <img src={{y.type}}>
+                </div>
+                <div class="col align-self-center">
+                    <div class='inbox'>
+                            <h3>{{y.name}}</h3>
+                            <div class="underline"></div>
+                            <p>{{y.desp}}</p>
+                            <a href={{y.link}}>
+                                <h6>More</h6>
+                            </a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="bot">
-            <a href="index.html">
-                <img src="img/home.svg">
-            </a>
-        </div>
+    </div>
+    <div class="row bot">
+            <div class="col align-self-center">
+                    <a href="/">
+                        <p>Homepage</p>
+                    </a>
+            </div>
+      
     </div>
 
     <script src="main.js"></script>

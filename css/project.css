@@ -92,16 +92,19 @@ h3{
 .underline{
     width: 60px;
     border-bottom: 8px solid rgb(184,111,252) ;
+    margin-bottom: 8px;
+
 }
 
 
-.bot p{
+.bot {
+    margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
     color: rgb(184, 111, 252);
     font-size: 20px!important;
-    width: 20%;
+    width: 100%;
     margin-left: 40%;
-    border: 3px solid rgb(184,111,252);
 }
 
 

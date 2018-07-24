@@ -1,13 +1,12 @@
+@import 'bootstrap.min.css';
 html,body{
-    width: 100%;
-   
+    width: 100%; 
     margin: 0;
 }
 
 body{
-    
     grid-auto-rows: 20%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Impact, Charcoal, sans-serif!important;
     font-size: 20px;
     color:white;
 }
@@ -21,6 +20,7 @@ body h1{
     width: 100%;
     height: 500px;
     margin: 0;
+    color:white;
     padding-top: 100px;
     text-align: center;
     background-color: #000000;
@@ -34,23 +34,22 @@ body h1{
 
 .themiddle{
     z-index: 3;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 33% 33% 33%;
     position: absolute;
-   
     top:30%;
-    width: 70%;
-    margin-left: 15%;
-    height: auto;
+    width: inherit;
+    height: 500px;
 }
 
 
 
-#left, #mid, #right{
+.inmid{
     color:black;
     background-color: rgb(238, 245, 245);
     text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    height: inherit;
+    padding-bottom: 10px;
 }
 
 img{
@@ -95,6 +94,7 @@ span{
 
 a:link {
     text-decoration: none;
+    color:rgb(184, 111, 252);
 }
 
 
@@ -114,13 +114,7 @@ h6:hover{
     padding-bottom: 60px;
 }
 
-.bot img{
-    width: 40px;
-    border: solid 1px  rgb(184, 111, 252);
-    padding: 15px 15px 15px 15px;
-    border-radius: 50px;
-   
-}
+
 
 @media screen and (max-width: 480px) {
     div.themiddle{

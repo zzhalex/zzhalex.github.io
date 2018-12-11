@@ -100,11 +100,11 @@ h1:before{
 }
 
 @keyframes head {
-    0% { opacity:1; content: "Web Developer"}
+    0% { opacity:1; content: "Front End Dev"}
     20% { opacity:0;}
-    40% {opacity:1; content: "QA Developer"}
+    40% {opacity:1; content: "UI Designer"}
     60% {opacity:0;}
-    80% { opacity:1; content:"Software Developer"}
+    80% { opacity:1; content:"Full Stack Dev"}
     100% { opacity:0;}
     
 }

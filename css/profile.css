@@ -2,6 +2,7 @@
 html,body{
     width: 100%; 
     margin: 0;
+    cursor: default;
 }
 
 body{
@@ -114,7 +115,16 @@ h6:hover{
     padding-bottom: 60px;
 }
 
+.home-but span{
+    font-size: 32px;
+    color: rgb(184, 111, 252);
+}
 
+.home-but span:hover{  
+    border-radius: 16px;
+    color:#fff;
+    background-color:rgb(184, 111, 252);
+}
 
 @media screen and (max-width: 480px) {
     div.themiddle{

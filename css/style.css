@@ -92,7 +92,7 @@ ul li:hover{
 
 
 h1:before{
-    content: 'Software Developer';
+    content: 'Web Developer';
     font-size: 50px;
     animation-name: head;
     animation-duration: 18s;
@@ -102,7 +102,7 @@ h1:before{
 @keyframes head {
     0% { opacity:1; content: "Front End Dev"}
     20% { opacity:0;}
-    40% {opacity:1; content: "UI Designer"}
+    40% {opacity:1; content: "Back End Dev"}
     60% {opacity:0;}
     80% { opacity:1; content:"Full Stack Dev"}
     100% { opacity:0;}

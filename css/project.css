@@ -107,6 +107,13 @@ h3{
     margin-left: 40%;
 }
 
+.home-but span{
+    font-size: 32px;
+    color: rgb(184, 111, 252);
+}
 
-
-
+.home-but span:hover{  
+    border-radius: 16px;
+    color:#fff;
+    background-color:rgb(184, 111, 252);
+}

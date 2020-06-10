@@ -21,6 +21,11 @@ a:link {
     color:white!important;
 }
 
+a img{
+	width: 32px;
+	height: 32px;
+}
+
 
 .demoapp p{
 	text-align: center;
